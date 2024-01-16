@@ -1,0 +1,435 @@
+/* start common styles*/
+.txt{
+    color: white
+}
+.text-btwn-sections{
+    width: fit-content;
+    margin:40px 0px 30px ;
+    font-size: 35px;
+    word-spacing: 3px;
+    text-align: center;    
+    color: var(--text-color-bl);
+}
+/* end common styles*/
+/* ----------------------------------- */
+/* start general values */
+:root{
+    --text-color-bl:black;
+    --text-color-wh:white;
+    --sec-color:#6492fc;
+    --p-color: rgba(0, 0, 0, 0.678);
+    --main-fillter:grayscale(.3);
+    --main-transation:.5s;
+    --border-color:rgba(0, 0, 0, 0.096);
+    scroll-behavior: smooth
+}
+*{
+    color:black;
+    text-transform: capitalize;
+}
+p{
+    text-transform: capitalize;
+    font-weight: bold;
+    color:var(--p-color);
+}
+hr{
+    opacity: .4;
+}
+span{
+    display: inline-block;
+    cursor: pointer;
+}
+/* end general values */
+/* -------------------------------------------- */
+/* start body style */
+/* start nav setion */
+.header .containr-header .links .blog ul{
+    display: none;
+}
+.containr-header ul li.blog{
+    margin: 0px 10px;
+    display: block;
+}
+/* end nav setion */
+/* start path section */
+div.header
+{
+    background-color: white;
+    z-index: 1;
+    box-shadow: 0px .1px 3px .1px rgba(0, 0, 0, 0.151);
+}
+.containr-header{
+    background-color: white;
+}
+div.path-section{
+    width: 100%;
+    height: auto;
+    background-color:#eee;
+    position: relative;
+    top: 100px;
+}
+div.path-section .containr {
+    gap: 20%;
+    padding: 40px;
+}
+div.path-section .containr h1{
+    font-size: 50px;
+}
+.containr div.path{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containr div.path span{
+    margin-right: 13px;
+    font-size: 18px;
+}
+.containr div.path span .two{
+    width: 40px;
+}
+/* end path section */
+/* start main-section */
+div.main-section{
+    width: 100%;
+    margin-top: 200px;
+}
+div.main-section .containr-flex{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+/* start col-one */
+div.main-section .containr-flex .one{
+    width:70%;
+    margin-right: 25px;
+}
+.containr-flex .one div.img{
+    width: 100%;
+}
+.containr-flex .one div.img img{
+    width: 100%;
+}
+.one .icons-under-pic span{
+    margin: 10px 7px 0px;
+    font-size: 15px;
+    color: var(--p-color);
+    font-weight: bold;
+}
+.one .icons-under-pic span i{
+    margin-right: 5px;
+    font-size: 13px;
+}
+.containr-flex .one h3{
+    margin: 30px 0px 20px   
+}
+.containr-flex .one p{
+    width: 70%;
+    margin-bottom: 50px
+}
+.one .tags span{
+    margin: 5px 0 0 10px;
+    padding: 5px;
+    background-color: #eee;
+    color: var(--p-color);
+}
+.one .tags span:hover{
+    opacity: .8;
+}
+.one .tags span i{
+    font-size: 17px;
+    margin-right: 5px;
+}
+.one .tags span.main{
+    margin: 0;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+/*end col-one */
+/* start col-tow */
+/* start first section */
+div.main-section .containr-flex .two{
+    width: 350px;
+    height:auto;
+    padding: 10px;
+}
+.containr-flex .two input{
+    width:90%;
+    padding: 7px;
+    margin-left:5%;
+    background-color: #eeeeee48;
+    border: none;
+    outline:1px solid var(--border-color);
+}
+.containr-flex .two  form div{
+    position: relative;
+}
+.containr-flex .two  form div i{
+    position: absolute;
+    right: 30px;
+    top: 5px;
+    cursor: pointer
+}
+.containr-flex .two input:hover{
+  outline-color: var(--sec-color);
+}
+.containr-flex .two p{
+    padding: 15px 0px; 
+    display: flex;
+    justify-content: space-between;
+}
+.containr-flex .two p:hover{
+    color: var(--sec-color);
+    cursor: pointer;
+}
+.containr-flex .two p span{
+    font-weight: lighter;
+    color: var(--sec-color);
+}
+/* end first section */
+/* start second section */
+div.posts-cont{
+    width: 300px;
+}
+div.posts-cont .post{
+    width: 100%; 
+    padding: 10px;
+    margin: 10px 0;
+    height:auto;
+    display: flex;
+}
+div.posts-cont .post:hover{
+    background-color: #eee;
+    cursor: pointer;
+}
+div.posts-cont .post .img{
+    width: 45%;
+    height: auto;
+    margin: 0px 10px 0 0;
+}
+div.posts-cont .post .img img{
+    width: 100%;
+    height: 100%;
+}
+div.posts-cont .post  .text{
+    width: 70%;
+}
+div.posts-cont .post  .text p{
+    font-size: 12px;
+    color: var(--sec-color);
+}
+/* end second section */
+/* start third section */
+div.col-two-tags{
+    width: 80%;
+}
+div.col-two-tags span{
+    background-color: #eee;
+    border-radius: 5px;
+    margin:2px;
+    padding: 7px;
+    color: var(--p-color);
+}
+/* end third section */
+/* end col-tow */
+
+/* end main-section */
+/* start big-post-setion  */
+.post-parent{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px;
+}
+/* start first comment */
+.comments{
+    width: 100%;
+    height:200px;
+    padding:10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 1px solid var(--border-color);
+}
+.containr-flex .one .big div.img{
+    width: 200px;
+    height: 100%;
+    margin-right:10px;
+}
+.big img{
+    width: 100%;
+    height: 100%;
+}
+
+.big .text{
+    width:70%;
+}
+.big .text .top{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+.big .text .top span.social{
+    padding: 5px;
+   margin-right: 2.5px;
+   border-radius: 2px;
+   background-color: var(--sec-color);
+}
+.big .text .top span i{
+    color: white;
+}
+.big .text hr{
+    width: 90%;
+    margin-left: 10px;
+}
+.big .text p{
+    font-size: 14px;
+    width: 80%;
+    margin-top: 10px;
+}
+/* end first comment */
+/* start small-comments */
+.post-parent .containr-small-comments{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border: none;
+}
+.containr-small-comments .smal-com{
+    height: 150px;
+    border: none;
+}
+
+.containr-small-comments .smal-com div.img{
+    width: 150px;
+    height: 100%;
+}
+.post-parent div.smal-com img{
+    width: 100%;
+    height: 100%;
+}
+.post-parent div.smal-com:hover{
+    border: 1px solid var(--sec-color);
+    cursor: pointer;
+}
+.post-parent div.smal-com .text{
+    width: 80%;
+    margin-left: 10px;
+}
+.post-parent div.smal-com p{
+    margin: 0;
+    /* width: %; */
+}
+/* .post-parent div.smal-com .top {
+    width: 100%;
+} */
+.post-parent div.smal-com .top h3 span{
+    font-size: 12px;
+    margin-left: 2%;
+    color: var(--p-color);
+}
+.post-parent div.smal-com .top span{
+    color: var(--sec-color);
+    font-size: 13px;
+    font-weight: bold;
+}
+/* endsmall-comments */
+/* end big-post-setion  */
+/* start replay data */
+div.replay-data{
+    width: 50%;
+    margin-left: 10%;
+}
+div.replay-data input{
+    border: none;
+    outline: none;
+    background-color:#eee;
+}
+div.replay-data input:hover{
+outline: 1px solid #6492fc18;
+}
+div.replay-data input.n-e{
+  width: 49%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+div.replay-data input.comment{
+    width: 99%;
+    margin: 10px 0;
+    padding: 30px;
+}
+div.replay-data input.btn{
+    width: 100px;
+    height: 30px;
+    padding: 20px;
+    background-color: var(--sec-color);
+    color: white;
+    cursor: pointer;
+}
+/* end replay data */
+/* end body style */
+/* start media */
+/* start l-sc */
+@media (max-width:1233px)
+{
+    div.containr-flex{
+        flex-direction: column;
+    }
+    div.main-section .containr-flex .one{
+        width: 100%;
+    }
+    div.main-section .containr-flex .two
+    {
+        width: 90%;
+        margin-left:5%;
+    }
+    .post-parent div.smal-com{
+        margin-top: 20px;
+}
+.post-parent div.smal-com .text h3{
+    font-size: 15px;
+    margin: 3px 10px 0;
+}
+.post-parent div.smal-com .text .rep{
+    margin: 8px 15px;
+}
+.containr-small-comments .smal-com div.img{
+    width: 100px;
+}
+div.replay-data
+{
+width: 90%;
+margin-left:5%;
+}
+}
+/* end l-sc */
+/*start m-sc */
+@media (max-width:830px)
+{
+    .big .text hr{
+            width: 70%;
+    }
+    .containr-flex .one .big div.img{
+        width: 130px;
+    }
+    .containr-flex .one .big .text .top h3{
+        margin: 10px 0 10px;
+        font-size: 15px;
+    }
+    .containr-flex .one .big .text p{
+         font-size: 12px;
+         width: 65%;
+    }
+    .containr-flex .one .big .text .top {
+        flex-direction: column;
+        margin-bottom: 10px;
+        align-items: flex-start;
+    }
+}
+/*end m-sc */
+/* start s-sc */
+
+/* end s-sc */
+/* send media */
